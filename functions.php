@@ -18,7 +18,7 @@ add_action( 'wp_enqueue_scripts', 'starter_get_parent_style' );
 add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
 
     global $wp_version;
-    if ( $wp_version !== '4.7.1' ) {
+    if ( $wp_version !== '6.1.1' ) {
        return $data;
     }
   
