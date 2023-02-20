@@ -1,8 +1,7 @@
 <?php
 
-/*	-----------------------------------------------------------------------------------------------
-	DIVI ENQUEUE STYLESHEETS
---------------------------------------------------------------------------------------------------- */
+/* DIVI ENQUEUE STYLESHEETS
+*/
 
 function starter_get_parent_style() {
 
@@ -11,9 +10,8 @@ function starter_get_parent_style() {
 }
 add_action( 'wp_enqueue_scripts', 'starter_get_parent_style' );
 
-/*	-----------------------------------------------------------------------------------------------
-	ALLOW SVG
---------------------------------------------------------------------------------------------------- */
+/* ALLOW SVG
+*/
 
 add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
 

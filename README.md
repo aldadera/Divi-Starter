@@ -1,6 +1,6 @@
-# Divi Starter
+# Divi Starter 1.0
 
-This is a simple child theme for the Divi Builder that can be used to customize the appearance of a Divi-powered website. The child theme is built on top of the Divi parent theme and can be customized further as per your requirements.
+This is a simple child theme for the Divi Builder that can be used to customize the appearance of a Divi-powered website. The child theme is built on top of the Divi parent theme (Tested with Divi 4.20) and can be customized further as per your requirements.
 
 ### Features
 This child theme provides the following features:
