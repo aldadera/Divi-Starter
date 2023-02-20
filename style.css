@@ -7,3 +7,16 @@
  Template:       Divi
  Version:        0.1
 */
+
+/*
+Mobile Menu Fullwidth
+*/
+.container.et_menu_container { 
+    width: calc( 100% - 60px);
+}
+
+.et_mobile_menu {
+    margin-left: -30px;
+    padding: 5%;
+    width: calc( 100% + 60px);
+}
