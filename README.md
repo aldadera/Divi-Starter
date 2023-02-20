@@ -10,6 +10,7 @@ This child theme provides the following features:
 - Custom styles for Divi Builder modules
 - Custom styles for WooCommerce pages
 - Responsive design
+- Enable SVG Support
 - Clean and lightweight code
 
 ### Installation
