@@ -47,7 +47,7 @@ add_filter( 'upload_mimes', 'cc_mime_types' );
   }
 add_action( 'admin_head', 'fix_svg' );
 
-/* Include the TGM_Plugin_Activation class.
+/* TGM PLUGIN ACTIVATION
 */
 
 require_once dirname( __FILE__ ) . '/includes/class-tgm-plugin-activation.php';
