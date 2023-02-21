@@ -46,3 +46,64 @@ add_filter( 'upload_mimes', 'cc_mime_types' );
           </style>';
   }
 add_action( 'admin_head', 'fix_svg' );
+
+/* Include the TGM_Plugin_Activation class.
+*/
+
+require_once dirname( __FILE__ ) . '/includes/class-tgm-plugin-activation.php';
+add_action( 'tgmpa_register', 'starter_register_required_plugins' );
+function starter_register_required_plugins() {
+	/*
+	 * Array of plugin arrays. Required keys are name and slug.
+	 * If the source is NOT from the .org repo, then source is also required.
+	 */
+  $plugins = array(
+    array(
+       'name'     => 'Classic Editor',
+       'slug'     => 'classic-editor',
+       'required' => false,
+     ),
+     array(
+      'name'     => 'WP Fastest Cache',
+      'slug'     => 'wp-fastest-cache',
+      'required' => false,
+    ),
+    array(
+      'name'     => 'EWWW Image Optimizer',
+      'slug'     => 'ewww-image-optimizer',
+      'required' => false,
+    ),
+    array(
+      'name'     => 'Slim SEO',
+      'slug'     => 'slim-seo',
+      'required' => false,
+    ),
+     /*array( 
+       'name'     => 'Ini Untuk Custom Plugin',
+       'slug'     => 'plugin-file', // The slug has to match the extracted folder from the zip.
+       'source'   => get_template_directory_uri() . '/includes/bundled-plugins/plugin-file-name.zip',
+       'required' => true,
+     ),*/
+   );
+ 
+   /*
+    * Array of configuration settings.
+   */
+   $config = array(
+     'id'           => 'tgmpa',
+     'default_path' => '/includes/bundled-plugins/',  // Default absolute path to bundled plugins.
+     'menu'         => 'install-plugins',             // Menu slug.
+     'parent_slug'  => 'themes.php',                  // Parent menu slug.
+     'capability'   => 'edit_theme_options',          // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
+     'has_notices'  => true,                          // Show admin notices or not.
+     'dismissable'  => true,                          // If false, a user cannot dismiss the nag message.
+     'is_automatic' => false,                         // Automatically activate plugins after installation or not.
+     'strings'      => array(
+       'page_title' => __( 'Install Recommended Plugins', 'theme-slug' ),
+       'menu_title' => __( 'Starter Plugins', 'theme-slug' ),
+       // <snip>...</snip>
+       //  'nag_type'   => 'error', // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
+     )
+   );
+   tgmpa( $plugins, $config );
+ }
