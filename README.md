@@ -5,11 +5,7 @@ This is a simple child theme for the Divi Builder that can be used to customize 
 ### Features
 This child theme provides the following features:
 
-- Customizable header and footer
-- Custom page templates
-- Custom styles for Divi Builder modules
-- Custom styles for WooCommerce pages
-- Responsive design
+- Recommended Plugins
 - Enable SVG Support
 - Clean and lightweight code
 
