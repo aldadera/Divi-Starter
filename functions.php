@@ -99,7 +99,7 @@ function starter_register_required_plugins() {
      'dismissable'  => true,                          // If false, a user cannot dismiss the nag message.
      'is_automatic' => false,                         // Automatically activate plugins after installation or not.
      'strings'      => array(
-       'page_title' => __( 'Install Recommended Plugins', 'theme-slug' ),
+       'page_title' => __( 'Recommended Plugins', 'theme-slug' ),
        'menu_title' => __( 'Starter Plugins', 'theme-slug' ),
        // <snip>...</snip>
        //  'nag_type'   => 'error', // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
