@@ -68,16 +68,6 @@ function starter_register_required_plugins() {
       'slug'     => 'wp-fastest-cache',
       'required' => false,
     ),
-    array(
-      'name'     => 'EWWW Image Optimizer',
-      'slug'     => 'ewww-image-optimizer',
-      'required' => false,
-    ),
-    array(
-      'name'     => 'Slim SEO',
-      'slug'     => 'slim-seo',
-      'required' => false,
-    ),
      /*array( 
        'name'     => 'Ini Untuk Custom Plugin',
        'slug'     => 'plugin-file', // The slug has to match the extracted folder from the zip.
